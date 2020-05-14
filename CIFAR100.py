@@ -48,7 +48,7 @@ class CIFAR100(VisionDataset):
         val_list = dict()
         for k, v in self.dataset.items():
             num = len(v)
-            sss = StratifiedShuffleSplit(n_splits=1, train_size=p)
+            sss = StratifiedShuffleSplit(n_splits=1, train_size=p, random_state=42)
             for ti, tti in sss.split(v, [0] * num):
                 train_index = ti
                 test_index = tti
