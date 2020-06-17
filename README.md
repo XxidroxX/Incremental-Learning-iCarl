@@ -4,7 +4,7 @@ A PyTorch Implementation of [iCaRL: Incremental Classifier and Representation Le
 The code implements experiments on CIFAR-100
 
 ### Notes
-* This code does **reproduce** the results from the paper.
+* This code **reproduce** the results from the paper.
 * This code contains a my new proposal to improve the accuracy
 * Versions
   - Python 3.7
