@@ -382,7 +382,7 @@ class iCarl:
         output = self.model(images)
         target = self.to_onehot(target, 100)
         output, target = output.to(DEVICE), target.to(DEVICE)
-        if self.old_model is None:
+        if self.old_model is None or self.classifier.lower() == 'finetuning':
             return self.BCE(output, target)
         else:
             with torch.no_grad():

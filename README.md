@@ -5,7 +5,7 @@ The code implements experiments on CIFAR-100
 
 ### Notes
 * This code **reproduce** the results from the paper.
-* This code contains a my new proposal to improve the accuracy
+* This code contains 2 my new proposals to improve the accuracy.
 * Versions
   - Python 3.7
   - PyTorch v1.5.0
